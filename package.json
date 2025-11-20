@@ -3,19 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
     "test": "vitest",
-    "setup-kv": "node scripts/setup-kv.js"
+    "build": "vite build",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.0",
-    "vitest": "^3.0.0 <3.1.0",
-    "wrangler": "^4.0.0"
+    "@cloudflare/vitest-pool-workers": "^0.8.8",
+    "vitest": "^3.0.9",
+    "wrangler": "^3.101.0"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "sublink-plus": "file:"
+    "sublink-plus": "npm:@hlink9/sublink-plus@^0.1.20"
   }
 }
